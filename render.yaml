@@ -5,7 +5,7 @@ services:
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
-    repo: https://github.com/newuserx1/vc
+    repo: https://github.com/newuserx1/vc.git 
     branch: main
     envVars:
       - key: TOKEN 
