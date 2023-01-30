@@ -1,0 +1,17 @@
+services:
+  - type: web
+    plan: starter
+    name: vc
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    repo: https://github.com/newuserx1/vc
+    branch: main
+    envVars:
+      - key: TOKEN 
+        sync: false
+      - key: HASH 
+        sync: false
+      - key: ID 
+        sync: false
+    autoDeploy: false 
